@@ -4,7 +4,7 @@
   "description": "Test package",
   "main": "testJS.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "cross-env PORT=5000 NODE_ENV=production node ./lessons/process.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,13 @@
   "bugs": {
     "url": "https://github.com/okepro/HelloWorldNodeJS/issues"
   },
-  "homepage": "https://github.com/okepro/HelloWorldNodeJS#readme"
+  "homepage": "https://github.com/okepro/HelloWorldNodeJS#readme",
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
 }
